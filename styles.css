@@ -35,13 +35,19 @@ img#naman {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	text-align: center;
+	width: auto;
+	padding: 5px;
 }
 
 
 .flex-container div {
 	background-color: white;
-	border-style: solid;
+	/*border-style: solid;*/
+	margin: 5px;
+	border: solid 1px;
+	background-color: #D3D3D3;
 }
+
 .center {
   display: block;
   margin-left: auto;
