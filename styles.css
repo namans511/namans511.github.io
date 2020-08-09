@@ -1,51 +1,52 @@
-body{
-	font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 #background {
-	background: url('background.jpeg') no-repeat center;
-    background-size: cover;
-    height:1000px;
+  background: url("background.jpeg") no-repeat center;
+  background-size: cover;
+  height: 1000px;
 }
-nav{
-	overflow: hidden;
-	position: sticky;
+nav {
+  overflow: hidden;
+  position: sticky;
 }
-nav li{
-	padding: 0.3%;
-	font-size: 103%;
+nav li {
+  padding: 0.3%;
+  font-size: 103%;
 }
 .banner-text {
-	margin-top: 70px;
-	text-align: right;
-	position: absolute;
-	top: 40%;
-	left: 70%;
-	transform: translate(-50%,-50%);
+  margin-top: 70px;
+  text-align: right;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 }
 
 img#naman {
-	display: block;
-	margin-left: auto;
-  	margin-right: auto;
-	width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 
 .flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	text-align: center;
-	width: auto;
-	padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: auto;
+  padding: 5px;
 }
 
-
 .flex-container div {
-	background-color: white;
-	/*border-style: solid;*/
-	margin: 5px;
-	border: solid 1px;
-	background-color: #D3D3D3;
+  background-color: white;
+  /*border-style: solid;*/
+  margin: 5px;
+  border: solid 1px;
+  background-color: #d3d3d3;
 }
 
 .center {
@@ -56,25 +57,24 @@ img#naman {
 }
 
 .flex-container div img {
-	width: 300px;
+  width: 300px;
 }
 
-
 .icons a img {
-	width: 50px;
-	float:left;
-	padding: 10px;
+  width: 50px;
+  float: left;
+  padding: 10px;
 }
 
 ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: fixed;
-  	top: 0;
-  	width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 li {
@@ -94,37 +94,37 @@ li a:hover {
 }
 
 .foot {
-	font-size: 120%;
-	background-color: #4c0f70;
-	color: white;
-	padding-left: 3%;
-	padding-bottom: 6%;
-	padding-top: 1%;
-	margin-top: 1%;
+  font-size: 120%;
+  background-color: #4c0f70;
+  color: white;
+  padding-left: 3%;
+  padding-bottom: 6%;
+  padding-top: 1%;
+  margin-top: 1%;
 }
 
 h1 {
-	text-align: center;
+  text-align: center;
 }
 
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .zoom:hover {
   -ms-transform: scale(1.25); /* IE 9 */
   -webkit-transform: scale(1.25); /* Safari 3-8 */
-  transform: scale(1.25); 
+  transform: scale(1.25);
 }
 
 @media screen and (max-width: 800px) {
-	li {
-		float: none;
-	}
-	.flex-container {
-		flex-direction: column;
-	}
-	ul {
-		position: relative;
-	}
+  li {
+    float: none;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  ul {
+    position: relative;
+  }
 }
