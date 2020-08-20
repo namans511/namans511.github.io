@@ -4,7 +4,7 @@ body {
   margin: 0px;
 }
 #background {
-  background: url("background.jpeg") no-repeat center;
+  background: url("images/background.jpeg") no-repeat center;
   background-size: cover;
   height: 1000px;
 }
