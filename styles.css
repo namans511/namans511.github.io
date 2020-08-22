@@ -6,6 +6,16 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: black;
   color: white;
+  scroll-behavior: smooth;
+}
+
+#expand-toggle,
+#expand-btn {
+  display: none;
+}
+
+.menuimg {
+  height: 50px;
 }
 
 nav {
@@ -15,20 +25,21 @@ nav {
 }
 
 .navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
   position: fixed;
   margin: 0;
-  list-style-type: none;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   background-color: #130902;
-  padding-left: 0;
 }
 
-.navbar li {
+/* .navbar li {
   float: right;
-}
+} */
 
-.navbar li a {
+.navbar div a {
   display: block;
   color: white;
   text-align: center;
@@ -36,8 +47,8 @@ nav {
   text-decoration: none;
 }
 
-.navbar li a:hover {
-  background-color: #111;
+.navbar div a:hover {
+  background-color: grey;
 }
 
 .hero-image {
@@ -89,19 +100,30 @@ h2 {
   margin-left: 8%;
   font-size: 2rem;
   display: inline-block;
+}
+
+.underline {
   border-bottom: 2px solid white;
 }
 
 hr {
+  display: none;
   border-color: #117bfb;
 }
 
-.line {
-  /* display: inline-block; */
+/* .line {
+  /* display: inline-block; 
   background-color: #117bfb;
   width: 1px;
   height: 10vh;
   border: 1px solid white;
+} */
+
+.about-me {
+  padding-left: 10%;
+  padding-right: 11%;
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
 .logo {
@@ -115,20 +137,20 @@ hr {
   flex-direction: row;
   /* border: 2px solid rgb(19, 0, 128); */
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .edu-left {
-  /* border: 2px solid green; */
+  border-right: 2px solid #117bfb;
   text-align: center;
   width: 30%;
   /* flex-grow: 1; */
 }
 
 .edu-right {
-  padding-top: 10px;
   /* border: 2px solid red; */
   width: 65%;
+  font-size: 120%;
   /* flex-grow: 2; */
 }
 
@@ -166,6 +188,20 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  #exp {
+    width: 100%;
+  }
+
+  #expand-btn {
+    display: block;
+    position: fixed;
+    z-index: 2;
+  }
+
+  nav {
+    display: none;
+  }
+
   .newline {
     display: none;
   }
@@ -180,20 +216,20 @@ footer {
   }
 
   hr {
+    display: block;
     width: 50%;
   }
 
   h2 {
+    width: 100%;
+    margin-left: 0;
     text-align: center;
   }
 
   .navbar {
+    flex-direction: column;
     position: static;
     padding: 0;
-  }
-
-  .navbar li {
-    float: none;
   }
 
   .edu-container {
@@ -205,9 +241,14 @@ footer {
   .edu-left {
     width: auto;
     font-size: 1rem;
+    border: none;
   }
 
   .edu-right {
     font-size: 1.3rem;
+  }
+
+  #expand-toggle:checked ~ * nav {
+    display: block;
   }
 }

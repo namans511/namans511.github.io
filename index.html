@@ -15,13 +15,19 @@
     ></script>
   </head>
   <body>
+    <div>
+      <input type="checkbox" id="expand-toggle" />
+      <label for="expand-toggle" id="expand-btn"
+        ><img src="images/menu.png" class="menuimg"
+      /></label>
+    </div>
     <nav>
-      <ul class="navbar">
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#home">Home</a></li>
-      </ul>
+      <div class="navbar">
+        <div><a href="#home">Home</a></div>
+        <div><a href="#about">About</a></div>
+        <div><a href="#skills">Skills</a></div>
+        <div><a href="#contact">Contact</a></div>
+      </div>
     </nav>
 
     <div class="newline"><br /><br /><br /></div>
@@ -38,9 +44,15 @@
       <img src="images/naman_img.jpeg" alt="naman_img" class="profile" />
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
       <h1>About</h1>
-      <h2>Education</h2>
+      <p class="about-me">
+        I'm a second year B.Tech student at AKGEC. I'm a bibliophile with a
+        passion for all things tech.
+        <br />
+        I enjoy playing basketball and watching anime in my spare time.
+      </p>
+      <h2><span class="underline">Education</span></h2>
       <div class="edu-container">
         <div class="edu-left">
           <img src="images/big-francis-logo.png" alt="francis" class="logo" />
@@ -49,14 +61,16 @@
         <!-- <div class="line"></div> -->
         <hr />
         <div class="edu-right">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          mollitia tenetur eos. Soluta modi ratione ad nostrum quae praesentium
-          magnam unde, placeat odit, at beatae ducimus, quisquam autem quo
-          aspernatur sunt vel vero. Ullam dicta quia ipsam maiores laboriosam
-          odit voluptas accusantium rerum officiis dolorem, praesentium culpa,
-          accusamus architecto suscipit.
+          2005-2017
+          <br />
+          I completed my class X from St. Francis' College, Lucknow.
+          <br />
+          I scored 93.2% in my high-school board exams. I was a part of various
+          activies such basketball and volleyball teams, the debating club and
+          the student council.
         </div>
       </div>
+      <br />
       <div class="edu-container">
         <div class="edu-left">
           <img src="images/cms-logo.png" alt="cms" class="logo" />
@@ -64,32 +78,36 @@
         </div>
         <hr />
         <div class="edu-right">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          mollitia tenetur eos. Soluta modi ratione ad nostrum quae praesentium
-          magnam unde, placeat odit, at beatae ducimus, quisquam autem quo
-          aspernatur sunt vel vero. Ullam dicta quia ipsam maiores laboriosam
-          odit voluptas accusantium rerum officiis dolorem, praesentium culpa,
-          accusamus architecto suscipit.
+          2017-2019
+          <br />
+          I completed my class 12th from City Montessori School, Lucknow.
+          <br />
+          I secured 95% marks in my class 12th examinations. I was the captain
+          of the basketball team and also the president of the dramatics
+          society. We won various prizes in stage plays in competetions
+          throughout the city.
         </div>
       </div>
+      <br />
       <div class="edu-container">
         <div class="edu-left">
-          <img src="images/akg-logo.png" alt="akg" class="logo" />
+          <img src="images/akg-logo1.png" alt="akg" class="logo" />
           <p>Ajay Kumar Garg Engineering College</p>
         </div>
         <hr />
         <div class="edu-right">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          mollitia tenetur eos. Soluta modi ratione ad nostrum quae praesentium
-          magnam unde, placeat odit, at beatae ducimus, quisquam autem quo
-          aspernatur sunt vel vero. Ullam dicta quia ipsam maiores laboriosam
-          odit voluptas accusantium rerum officiis dolorem, praesentium culpa,
-          accusamus architecto suscipit.
+          2019-2023
+          <br />
+          I'm currently pursuing B.Tech in Information Technology at Ajay Kumar
+          Garg Engineering College, Ghaziabad.
+          <br />
+          Here, I became heavily interesed in competitive programming and have
+          won many competitions for the same.
         </div>
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h1>Skills</h1>
       <div class="skills-container">
         <div class="skill">
@@ -112,7 +130,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h1>Contact Me</h1>
       <div class="contact-container">
         <a href="mailto:srivastava.naman511@gmail.com" target="_blank">
@@ -135,6 +153,7 @@
         </a>
       </div>
     </section>
+
     <footer>
       <div class="foot">
         Made with ❤️ by Naman
