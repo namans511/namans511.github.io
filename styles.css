@@ -9,15 +9,6 @@ body {
   scroll-behavior: smooth;
 }
 
-#expand-toggle,
-#expand-btn {
-  display: none;
-}
-
-.menuimg {
-  height: 50px;
-}
-
 nav {
   position: sticky;
   width: 100%;
@@ -111,14 +102,6 @@ hr {
   border-color: #117bfb;
 }
 
-/* .line {
-  /* display: inline-block; 
-  background-color: #117bfb;
-  width: 1px;
-  height: 10vh;
-  border: 1px solid white;
-} */
-
 .about-me {
   padding-left: 10%;
   padding-right: 11%;
@@ -188,20 +171,6 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  #exp {
-    width: 100%;
-  }
-
-  #expand-btn {
-    display: block;
-    position: fixed;
-    z-index: 2;
-  }
-
-  nav {
-    display: none;
-  }
-
   .newline {
     display: none;
   }
@@ -248,7 +217,7 @@ footer {
     font-size: 1.3rem;
   }
 
-  #expand-toggle:checked ~ * nav {
-    display: block;
+  .contact-container {
+    font-size: 5rem;
   }
 }
