@@ -75,16 +75,33 @@ nav {
   margin-right: auto;
 }
 
-.main {
+section {
   margin: 10px;
 }
 
 h1 {
   color: #117bfb;
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  margin-left: 8%;
+  font-size: 2rem;
+  display: inline-block;
+  border-bottom: 2px solid white;
 }
 
 hr {
   border-color: #117bfb;
+}
+
+.line {
+  /* display: inline-block; */
+  background-color: #117bfb;
+  width: 1px;
+  height: 10vh;
+  border: 1px solid white;
 }
 
 .logo {
@@ -98,6 +115,7 @@ hr {
   flex-direction: row;
   /* border: 2px solid rgb(19, 0, 128); */
   justify-content: space-between;
+  /* align-items: center; */
 }
 
 .edu-left {
@@ -114,6 +132,27 @@ hr {
   /* flex-grow: 2; */
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* .skill p {
+  text-align: center;
+  color: #117bfb;
+} */
+
+/* .contact {
+
+} */
+
+.foot {
+  background-color: #117bfb;
+  padding: 20px;
+  text-align: center;
+}
+
 @media screen and (max-width: 800px) {
   .hero-text {
     font-size: 7vw;
@@ -124,12 +163,12 @@ hr {
     width: 65%;
   }
 
-  h1 {
-    text-align: center;
-  }
-
   hr {
     width: 50%;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   .navbar {
