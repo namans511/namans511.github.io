@@ -120,8 +120,8 @@ hr {
     padding-top: 30vh;
   }
 
-  .newline {
-    display: none;
+  .profile {
+    width: 65%;
   }
 
   h1 {
