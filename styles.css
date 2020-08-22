@@ -4,7 +4,42 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  background-color: black;
+  color: white;
 }
+
+nav {
+  position: sticky;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar {
+  position: fixed;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  background-color: #130902;
+  padding-left: 0;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 19px 50px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("images/backgorund-desk.jpg");
@@ -19,8 +54,10 @@ body {
   text-align: center;
   margin: auto;
   font-size: 4vw;
-  padding-top: 300px;
+  padding-top: 25vh;
   color: white;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .hero-border {
@@ -29,39 +66,8 @@ body {
   border: solid 5px white;
 }
 
-nav {
-  position: sticky;
-  width: 100%;
-}
-
-.navbar {
-  position: fixed;
-  margin: 0;
-  list-style-type: none;
-  overflow: hidden;
-  width: 100%;
-  background-color: aquamarine;
-  padding-left: 0;
-}
-
-.navbar li {
-  float: right;
-}
-
-.navbar li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 19px 50px;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  background-color: #111;
-}
-
 .profile {
-  border-radius: 50%;
+  border-radius: 100%;
   padding-top: 20px;
   width: 20%;
   display: block;
@@ -69,8 +75,84 @@ nav {
   margin-right: auto;
 }
 
+.main {
+  margin: 10px;
+}
+
+h1 {
+  color: #117bfb;
+}
+
+hr {
+  border-color: #117bfb;
+}
+
+.logo {
+  background-color: white;
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.edu-container {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid rgb(19, 0, 128); */
+  justify-content: space-between;
+}
+
+.edu-left {
+  /* border: 2px solid green; */
+  text-align: center;
+  width: 30%;
+  /* flex-grow: 1; */
+}
+
+.edu-right {
+  padding-top: 10px;
+  /* border: 2px solid red; */
+  width: 65%;
+  /* flex-grow: 2; */
+}
+
 @media screen and (max-width: 800px) {
   .hero-text {
     font-size: 7vw;
+    padding-top: 30vh;
+  }
+
+  .newline {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  hr {
+    width: 50%;
+  }
+
+  .navbar {
+    position: static;
+    padding: 0;
+  }
+
+  .navbar li {
+    float: none;
+  }
+
+  .edu-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .edu-left {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  .edu-right {
+    font-size: 1.3rem;
   }
 }
