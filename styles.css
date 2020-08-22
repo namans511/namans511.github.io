@@ -143,9 +143,17 @@ hr {
   color: #117bfb;
 } */
 
-/* .contact {
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  font-size: 128px;
+}
 
-} */
+.contact-container a {
+  color: white;
+}
 
 .foot {
   background-color: #117bfb;
@@ -153,7 +161,15 @@ hr {
   text-align: center;
 }
 
+footer {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 800px) {
+  .newline {
+    display: none;
+  }
+
   .hero-text {
     font-size: 7vw;
     padding-top: 30vh;
