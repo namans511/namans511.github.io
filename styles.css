@@ -21,14 +21,9 @@ nav {
   flex-direction: row;
   position: fixed;
   margin: 0;
-  /* overflow: hidden; */
   width: 100%;
   background-color: #130902;
 }
-
-/* .navbar li {
-  float: right;
-} */
 
 .navbar div a {
   display: block;
@@ -118,7 +113,6 @@ hr {
 .edu-container {
   display: flex;
   flex-direction: row;
-  /* border: 2px solid rgb(19, 0, 128); */
   justify-content: space-between;
   align-items: center;
 }
@@ -127,14 +121,11 @@ hr {
   border-right: 2px solid #117bfb;
   text-align: center;
   width: 30%;
-  /* flex-grow: 1; */
 }
 
 .edu-right {
-  /* border: 2px solid red; */
   width: 65%;
   font-size: 120%;
-  /* flex-grow: 2; */
 }
 
 .skills-container {
@@ -142,11 +133,6 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-/* .skill p {
-  text-align: center;
-  color: #117bfb;
-} */
 
 .contact-container {
   display: flex;
